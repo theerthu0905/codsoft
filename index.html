@@ -3,40 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Welcome to Our Website</h1>
-            <p>Your success is our priority</p>
-            <a href="#services" class="btn">Learn More</a>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button" data-value="7">7</button>
+            <button class="button" data-value="8">8</button>
+            <button class="button" data-value="9">9</button>
+            <button class="button operator" data-value="/">/</button>
+            <button class="button" data-value="4">4</button>
+            <button class="button" data-value="5">5</button>
+            <button class="button" data-value="6">6</button>
+            <button class="button operator" data-value=""></button>
+            <button class="button" data-value="1">1</button>
+            <button class="button" data-value="2">2</button>
+            <button class="button" data-value="3">3</button>
+            <button class="button operator" data-value="-">-</button>
+            <button class="button" data-value="0">0</button>
+            <button class="button" data-value=".">.</button>
+            <button class="button operator" data-value="+">+</button>
+            <button class="button" id="equals">=</button>
+            <button class="button" id="clear">C</button>
         </div>
-    </header>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Service One</h3>
-                <p>Details about service one.</p>
-            </div>
-            <div class="service">
-                <h3>Service Two</h3>
-                <p>Details about service two.</p>
-            </div>
-            <div class="service">
-                <h3>Service Three</h3>
-                <p>Details about service three.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
